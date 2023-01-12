@@ -6,12 +6,12 @@
 	
 	
 	
-<a href="AboutPage.html"> About Page</a>
+<a style="font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace'"href="AboutPage.html"> About Page</a>
 
 	
 <center>
 	<strong>	
-	<div  id="oval" style="color: #00000; padding: px; font-size: 30px;">What Should I Wear?
+	<div  id="oval" style="color: #00000; padding: px; font-size: 30px;font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace'">What Should I Wear?
 		 </div>
 	</div>
 	</strong>
@@ -73,9 +73,9 @@ div
 }
 
 .button1 {
-  background-color: #78A6c8; 
+  background-color: #FFFFFF; 
   color: black; 
-  border: 25px solid #78A6C8;
+  border: 1px solid #000000;
 	font-size: 15px;
 	float: center;
 	margin-bottom: 20px;
@@ -84,6 +84,8 @@ div
 		font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 	
 	width: 200px;
+	height: 75px;
+	border-radius: 12px;
 	
 	;
 		
@@ -139,7 +141,7 @@ function displayRandomHats()
 	   
    },   
    {  
-     src: "LMUHat.png",  
+     src: "Images/LMUHat.png",  
      width: "200",  
      height: "200"  
    },   
@@ -222,23 +224,23 @@ function displayRandomShirts()
    var shirtArray = [  
    {   
      //address URL of the image  
-     src: "Images/FenderShirt.JPEG",  
+     src: "Images/sctee.png",  
      //size for the image to be display on webpage  
-     width: "200",  
-     height:"200"  
+     width: "250",  
+     height:"250"  
    },   
    {  
-     src: "Images/LaborShirt.JPEG",  
-     width: "200",  
-     height: "200"  
+     src: "Images/cruztee.png",  
+     width: "250",  
+     height: "250"  
    },   
    {  
-     src: "Images/ThrasherShirt.JPEG",  
-     width: "200",  
-     height: "200"  
+     src: "Images/cpslo.png",  
+     width: "250",  
+     height: "250"  
    },  
    {  
-     src: "Images/VansShirt.JPEG",  
+     src: "Images/VansShirt.png",  
      width: "200",  
      height: "200"
 	},  
@@ -318,25 +320,25 @@ function displayRandomPants()
    var pantsArray = [  
    {   
      //address URL of the image  
-     src: "Images/BlackPants.png",  
+     src: "Images/jeans.png",  
      //size for the image to be display on webpage  
-     width: "200",  
-     height:"200"  
+     width: "250",  
+     height:"250"  
    },   
    {  
-     src: "Images/BrownPants.jpg",  
-     width: "200",  
-     height: "200"  
+     src: "Images/jeans.png",  
+     width: "250",  
+     height: "250"  
    },   
    {  
-     src: "Images/BlackPants.png",  
-     width: "200",  
-     height: "200"  
+     src: "Images/jeans.png",  
+     width: "250",  
+     height: "250"  
    },  
    {  
-     src: "Images/BlackPants.png",  
-     width: "200",  
-     height: "200"
+     src: "Images/jeans.png",  
+     width: "250",  
+     height: "250"
 	},  
    {  
      
@@ -423,8 +425,8 @@ function displayRandomHats()
    },   
    {  
      src: "Images/LMUHat.png",  
-     width: "200",  
-     height: "200"  
+     width: "180",  
+     height: "180"  
    },   
    {  
      src: "Images/NYHat.png",  
@@ -481,7 +483,7 @@ function displayRandomHats()
   
  
 <center>
-<button class= "button1" id='bt3' onclick="displayRandomShoes();"> Choose Shoes </button>  
+
 </center>   
 	
 	
@@ -498,18 +500,20 @@ function displayRandomHats()
 
 
 
-		
-<div class="hat"id="placehere">
-
-</div>
-
 <div class="face">
 	
-<img src="Images/jsween.png" width="200" height="200">
+<img src="Images/jsween1.png" width="170" height="170">
 	
-	
+<div class="hat" id="placehere">
 
+
+
+
+	
+	
 </div>
+
+
 
 
 <div id="placehere2">
@@ -521,19 +525,38 @@ function displayRandomHats()
 
 </div>
 
-
 <style>
 
+	
 	.face{
-		padding-top: 10px;
-		padding-botton: 10px;
+		
+		position: absolute;
+z-index: 1;
+
+height: 250px;
+width: 350px;
+top: 150px ;
+left: 1000px ;
+	right: ;
+		
 		
 	}
 	.hat{
-		padding-top: 10px;
-		padding-bottom: 10px;
+				
+position: absolute;
+z-index: 2;
+
+height: 300px;
+width: 350px;
+top: -100px;
+left: 0px;
+		bottom: 00px;
 		
-		
+}
+	}
+	
+	}
+	
 	}
 </style>
 
@@ -545,6 +568,14 @@ function displayRandomHats()
 
 
 
+
+
+
+
+
+	
+	
+	
 
 
 
