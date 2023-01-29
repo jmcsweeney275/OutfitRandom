@@ -107,94 +107,11 @@ div
 	
 	
 	
-<html>  
-<head>  
-<title>Choose Hat</title>  
-<style>  
-body {  
-margin-top: 30px;  
-}  
-</style>   
-</head>  
+
  <center>
 	 
 	<center>
-<button class="button1" id="bt1" onclick="displayRandomHats();"> Choose Hat </button>  
-   
-	</center> 
-	 
-	 
-<script> 
-	
-	
-function displayRandomHats()   
-{  
-   //array of images with image location, height, and width  
-   var imageArray = [  
-   {   
-     //address URL of the image  
-     src: "docs/assets/GreenGiantsHat.PNG",  
-     //size for the image to be display on webpage  
-     width: "200",  
-     height:"200"
 
-	   
-   },   
-   {  
-     src: "docs/assets/LMUHat.png",  
-     width: "200",  
-     height: "200"  
-   },   
-   {  
-     src: "docs/assets/NYHat.PNG",  
-     width: "200",  
-     height: "200"  
-   },  
-   {  
-     src: "/docs/assets/OrangeGiantsHat.PNG",  
-     width: "200",  
-     height: "200"
-	},  
-   {  
-     src: "OutfitRandom/assets/WolfHat.PNG",  
-     width: "200",  
-     height: "200"
-    } ];  
-      
-    //find the length of the array of images  
-    var arrayLength = imageArray.length;  
-    var newArray = [];  
-    for (var i = 0; i < arrayLength; i++) {  
-        newArray[i] = new Image(); 
-        newArray[i].src = imageArray[i].src;  
-        newArray[i].width = imageArray[i].width;  
-        newArray[i].height = imageArray[i].height;  
-    }  
-     
-  // create random image number  
-  function getRandomNum(min, max)   
-  {  
-      // generate and return a random number for the image to be displayed   
-      imgNo = Math.floor(Math.random() * (max - min + 1)) + min;  
-      return newArray[imgNo];  
-  }    
-  
-  // 0 is first image and (preBuffer.length - 1) is last image of the array  
-  var newImage = getRandomNum(0, newArray.length - 1);  
-   
-  // remove the previous images  
-  var images = document.getElementsByTagName('img');  
-  var l = images.length;  
-  for (var p = 0; p < l; p++) {  
-     ;  
-  }  
-  
-	// display the new random image
-
-  document.getElementById("placehere3").appendChild(newImage);  
-}  
-	
-</script>  
 	</center>
 <body>  
  
