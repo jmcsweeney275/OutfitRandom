@@ -42,7 +42,668 @@ div
 
 
 <body>
+<style><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+
+	
+	
+<a style="font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace'"href="AboutPage.html"> About Page</a>
+
+	
+<center> 
+	<strong>	
+	<div  id="oval" style="color: #00000; padding: px; font-size: 30px;font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace'">Random.Outfit
+		 </div>
+	</div>
+	</strong>
+	</h1>
+
 <style>
+
+	</center>
+
+
+div
+	{height: 100px;
+	line-height: 90px;
+		font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"
+	}
+	
+</style>
+	<style>
+
+		
+	
+	
+</style>
+	
+	
+	
+
+
+
+<body>
+<style>
+	body {
+		background-color: #D1D1D1
+	}
+	</style>
+
+
+
+
+
+
+
+<button class="button1" onClick="window.location.reload();">Reset Outfit</button>	
+
+       
+<style>
+.button {
+  background-color: #78A6C8; /* Green */
+  border: none;
+  color: #47a074;
+  padding: 32px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 50px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  
+	;
+}
+
+.button1 {
+  background-color: #FFFFFF; 
+  color: black; 
+  border: 1px solid #000000;
+	font-size: 15px;
+	float: center;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	box-shadow: 10px 10px 5px black;
+		font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	
+	width: 200px;
+	height: 75px;
+	border-radius: 12px;
+	
+	;
+		
+}
+
+	.button1:hover{
+		box-shadow: 0px 0px 0px;
+		transition-duration: 0.6s;
+		
+		
+	}
+	
+	 
+	
+
+</style>
+	
+	
+	
+	
+	
+  
+<title>Choose Hat</title>  
+<style>  
+body {  
+margin-top: 30px;  
+}  
+</style>   
+</head>  
+ <center>
+	 
+	<center>
+<!--<button class="button1" id="bt1" onclick="displayRandomHats();"> Choose Hat </button>  
+   
+	</center> 
+-->
+	
+	 
+<script> 
+	
+	
+function displayRandomHats()   
+{  
+   //array of images with image location, height, and width  
+   var imageArray = [  
+   {   
+     //address URL of the image  
+     src: "Images/GreenGiantsHat.png",  
+     //size for the image to be display on webpage  
+     width: "180",  
+     height:"180"
+
+	   
+   },   
+   {  
+     src: "Images/beanie.png",  
+     width: "150",  
+     height: "150"  
+   },   
+   {  
+     src: "Images/beanie.png",  
+     width: "150",  
+     height: "150"  
+   },  
+   {  
+     src: "Images/OrangeGiantsHat.png",  
+     width: "180",  
+     height: "180"
+	},  
+   {  
+     src: "Images/WolfHat.png",  
+     width: "180",  
+     height: "180"
+    } ];  
+      
+    //find the length of the array of images  
+    var arrayLength = imageArray.length;  
+    var newArray = [];  
+    for (var i = 0; i < arrayLength; i++) {  
+        newArray[i] = new Image(); 
+        newArray[i].src = imageArray[i].src;  
+        newArray[i].width = imageArray[i].width;  
+        newArray[i].height = imageArray[i].height;  
+    }  
+     
+  // create random image number  
+  function getRandomNum(min, max)   
+  {  
+      // generate and return a random number for the image to be displayed   
+      imgNo = Math.floor(Math.random() * (max - min + 1)) + min;  
+      return newArray[imgNo];  
+  }    
+  
+  // 0 is first image and (preBuffer.length - 1) is last image of the array  
+  var newImage = getRandomNum(0, newArray.length - 1);  
+   
+ // remove the previous images  
+   var images = document.getElementsByTagName('img');  
+  var l = images.length;  
+  for (var p = 0; p < l; p++) {  
+     ; 
+  }  
+  // display the new random image    
+  document.getElementById("placehere").appendChild(newImage); 
+   
+}  
+	
+</script>  
+	</center>
+
+ 
+	
+
+	
+ 
+<title>Choose Shirt</title>  
+<style>  
+body {  
+margin-top: 100px;  
+}  
+</style>   
+  
+  
+<script>  
+function displayRandomShirts()   
+{  
+   //array of images with image location, height, and width  
+   var shirtArray = [  
+   {   
+     //address URL of the image  
+     src: "Images/sctee.png",  
+     //size for the image to be display on webpage  
+     width: "250",  
+     height:"250"  
+   },   
+   {  
+     src: "Images/cruztee.png",  
+     width: "270",  
+     height: "270"  
+   },   
+   {  
+     src: "Images/cpslo.png",  
+     width: "240",  
+     height: "240"  
+   },  
+   {  
+     src: "Images/cruztee.png",  
+     width: "250",  
+     height: "250"
+	},  
+   {  src: "Images/polog1.png",
+	width: "260",
+	height: "260" 
+    },
+   { src: "Images/lmushirt.png",
+	width: "250",
+	height: "250"
+	   
+	   }
+   ];  
+      
+    //find the length of the array of images  
+    var arrayLength = shirtArray.length;  
+    var newArray = [];  
+    for (var i = 0; i < arrayLength; i++) {  
+        newArray[i] = new Image();  
+        newArray[i].src = shirtArray[i].src;  
+        newArray[i].width = shirtArray[i].width;  
+        newArray[i].height = shirtArray[i].height;  
+    }  
+     
+  // create random image number  
+  function getRandomNum(min, max)   
+  {  
+      // generate and return a random number for the image to be displayed   
+      imgNo = Math.floor(Math.random() * (max - min + 1)) + min;  
+      return newArray[imgNo];  
+  }    
+  
+  // 0 is first image and (preBuffer.length - 1) is last image of the array  
+  var newImage = getRandomNum(0, newArray.length - 1);  
+   
+  // remove the previous images  
+   var images = document.getElementsByTagName('img');  
+  var l = images.length;  
+  for (var p = 0; p < l; p++) {  
+     ; 
+  }  
+  // display the new random image    
+  document.getElementById("placehere2").appendChild(newImage);  
+}
+	
+</script>  
+   
+ <!--
+<center>
+<button class="button1"  id='bt2' onclick="displayRandomShirts()"> Choose Shirt </button>  
+   
+	</center>
+-->
+	
+
+
+	
+</div>  
+ 
+
+	
+
+
+	
+
+
+
+
+
+
+<title> Choose Jacket</title>
+<style>
+	body {
+	margin-top: 50px;
+		
+	}
+</style>
+<script>  
+function displayRandomJacket()   
+{  
+   //array of images with image location, height, and width  
+   var jacketArray = [  
+   {   
+     //address URL of the image  
+     src: "Images/patagucci.png",  
+     //size for the image to be display on webpage  
+     width: "330",  
+     height:"330"  
+   },   
+   {  
+     src: "Images/greyhoodie.png",  
+     width: "340",  
+     height: "340"  
+   },   
+   {  
+     src: "Images/flannel1.png",  
+     width: "310",  
+     height: "310"  
+   },  
+   {  
+     src: "Images/patagucci.png",  
+     width: "340",  
+     height: "340"
+	},  
+   {  
+     
+    } ];  
+      
+    //find the length of the array of images  
+    var arrayLength = jacketArray.length;  
+    var newArray = [];  
+    for (var i = 0; i < arrayLength; i++) {  
+        newArray[i] = new Image();  
+        newArray[i].src = jacketArray[i].src;  
+        newArray[i].width = jacketArray[i].width;  
+        newArray[i].height = jacketArray[i].height;  
+    }  
+     
+  // create random image number  
+  function getRandomNum(min, max)   
+  {  
+      // generate and return a random number for the image to be displayed   
+      imgNo = Math.floor(Math.random() * (max - min + 1)) + min;  
+      return newArray[imgNo];  
+  }    
+  
+  // 0 is first image and (preBuffer.length - 1) is last image of the array  
+  var newImage = getRandomNum(0, newArray.length - 1);  
+   
+  // remove the previous images  
+   var images = document.getElementsByTagName('img');  
+  var l = images.length;  
+  for (var p = 0; p < l; p++) {  
+     ; 
+
+  }  
+  // display the new random image    
+  document.getElementById("placehere4").appendChild(newImage);  
+}
+
+</script>  
+<!--
+<center>
+<button class="button1" id="bt4" onClick="displayRandomJacket()"> Choose Jacket
+	</button>
+</center>
+ -->
+
+<title>Choose Pants</title>  
+<style>  
+body {  
+margin-top: 30px;  
+}  
+</style>   
+  
+  
+<script>  
+function displayRandomPants()   
+{  
+   //array of images with image location, height, and width  
+   var pantsArray = [  
+   {   
+     //address URL of the image  
+     src: "Images/jeans.png",  
+     //size for the image to be display on webpage  
+     width: "250",  
+     height:"300"  
+   },   
+   {  
+     src: "Images/jeans.png",  
+     width: "250",  
+     height: "300"  
+   },   
+   {  
+     src: "Images/trousers.png",  
+     width: "250",  
+     height: "300"  
+   },  
+   {  
+     src: "Images/trousers.png",  
+     width: "250",  
+     height: "300"
+	},  
+   {  
+     
+    } ];  
+      
+    //find the length of the array of images  
+    var arrayLength = pantsArray.length;  
+    var newArray = [];  
+    for (var i = 0; i < arrayLength; i++) {  
+        newArray[i] = new Image();  
+        newArray[i].src = pantsArray[i].src;  
+        newArray[i].width = pantsArray[i].width;  
+        newArray[i].height = pantsArray[i].height;  
+    }  
+     
+  // create random image number  
+  function getRandomNum(min, max)   
+  {  
+      // generate and return a random number for the image to be displayed   
+      imgNo = Math.floor(Math.random() * (max - min + 1)) + min;  
+      return newArray[imgNo];  
+  }    
+  
+  // 0 is first image and (preBuffer.length - 1) is last image of the array  
+  var newImage = getRandomNum(0, newArray.length - 1);  
+   
+  // remove the previous images  
+   var images = document.getElementsByTagName('img');  
+  var l = images.length;  
+  for (var p = 0; p < l; p++) {  
+     ; 
+
+  }  
+  // display the new random image    
+  document.getElementById("placehere3").appendChild(newImage);  
+}
+
+</script>  
+
+	 
+ <!--
+<center>
+<button class="button1"  id="bt3" onclick="displayRandomPants()"> Choose Pants </button>  
+</center>   
+-->
+	
+
+
+
+
+
+
+
+
+
+ 
+
+
+  
+<script>  
+
+    
+    
+function displayRandomShoes()   
+{  
+   //array of images with image location, height, and width  
+  
+ var imageArray = [  
+   {   
+     //address URL of the image  
+     src: "Images/damndaniel.png",  
+     //size for the image to be display on webpage  
+     width: "190",  
+     height:"170"
+
+       
+   },   
+   {  
+     src: "Images/slipons.png",  
+     width: "180",  
+     height: "180"  
+   },   
+   {  
+     src: "Images/damndaniel.png",  
+     width: "180",  
+     height: "180"  
+   },  
+   {  
+     src: "Images/slipons.png",  
+     width: "180",  
+     height: "180"
+    },  
+   {  
+     src: "Images/slipons.png",  
+     width: "180",  
+     height: "180",
+	   
+    } ];  
+      
+    //find the length of the array of images  
+    var arrayLength = imageArray.length;  
+    var newArray = [];  
+    for (var i = 0; i < arrayLength; i++) {  
+        newArray[i] = new Image(); 
+        newArray[i].src = imageArray[i].src;  
+        newArray[i].width = imageArray[i].width;  
+        newArray[i].height = imageArray[i].height;  
+    }  
+     
+  // create random image number  
+  function getRandomNum(min, max)   
+  {  
+      // generate and return a random number for the image to be displayed   
+      imgNo = Math.floor(Math.random() * (max - min + 1)) + min;  
+      return newArray[imgNo];  
+  }    
+  
+  // 0 is first image and (preBuffer.length - 1) is last image of the array  
+  var newImage = getRandomNum(0, newArray.length - 1);  
+   
+  // remove the previous images  
+  var images = document.getElementsByTagName('img');  
+  var l = images.length;  
+  for (var p = 0; p < l; p++) {  
+     ;  
+  }  
+  
+    // display the new random image
+
+  document.getElementById("placehere5").appendChild(newImage);  
+}  
+    
+</script>
+  <!--
+  <center>
+	  
+<button class="button1" id="bt5" onClick="displayRandomShoes()" >Choose Shoes</button>
+</center>
+ -->
+<center>
+
+	<button class="button1" id="bt8" onClick=" displayRandomHats(); displayRandomShirts(); displayRandomPants(); displayRandomJacket(); displayRandomShoes(); " > Generate Outfit </button>
+
+</center>
+
+<div class="face">
+	
+<img src="Images/skelly.png" height="140px" width="140px">
+
+
+<div class="hat" id="placehere">
+
+	
+</div>
+
+
+	
+<div class="jacket" id="placehere4">
+	</div>
+<div class="shirt" id="placehere2">
+	</div>
+<div class="pants" id="placehere3">
+	</div>
+<div class= "shoes" id="placehere5">
+	
+	</div>	
+	
+
+<style>
+
+	.shirt{
+		position: absolute;
+		z-index: 2;
+		left: 65px;
+		top: 140px;
+		
+	}
+	.face{
+		
+		position: absolute;
+z-index: 5;
+
+height: 250px;
+width: 350px;
+top: 150px ;
+left: 1000px ;
+	right: ;
+		
+		
+	}
+	.hat{
+				
+position: absolute;
+z-index: 6;
+
+height: 300px;
+width: 350px;
+top: -100px;
+left: 0px;
+		bottom: 00px;
+		
+}
+	.pants{
+		position: absolute;
+		z-index: 4;
+		top: 370px;
+		left: 50px;
+		
+	}
+	.jacket{
+		position: absolute;
+		z-index: 6;
+		left: 0px;
+		top: 130px;
+	}
+	
+	.shoes{
+		position: absolute;
+		z-index: 3;
+		top: 630px;
+		left: 75px;
+		
+	}
+		
+	
+		
+</style>
+
+
+	
+	
+	
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
 	body {
 		background-color: #D1D1D1
 	}
