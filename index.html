@@ -616,6 +616,20 @@ function displayRandomShoes()
 </div>
 
 
+	<script>
+  function adjustWindowSize() {
+    var container = document.getElementById("placehere5");
+    var containerHeight = container.offsetHeight;
+    var windowHeight = window.innerHeight;
+
+    // Check if the container height exceeds the window height
+    if (containerHeight > windowHeight) {
+      // Set the window height to match the container height
+      window.resizeTo(window.innerWidth, containerHeight);
+    }
+  }
+</script>
+
 	
 <div class="jacket" id="placehere4">
 	</div>
